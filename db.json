@@ -1,0 +1,461 @@
+{
+   "admins": [
+      {
+         "id": "1",
+         "name": "admin",
+         "password": "admin"
+      }
+   ],
+   "clients": [
+      {
+         "id": "1",
+         "name": "Kiss István",
+         "email": "kisspista@email.com",
+         "password": "pisti"
+      }
+   ],
+   "services": [
+      {
+         "id": "1",
+         "name": "Masszázs",
+         "description": "Relaxáló masszázs, amely segít enyhíteni a stresszt és a fáradtságot.",
+         "person": {
+            "name": "Kovács Anna",
+            "photoUrl": "https://randomuser.me/api/portraits/women/31.jpg",
+            "password": "anna"
+         }
+      },
+      {
+         "id": "2",
+         "name": "Fodrász",
+         "description": "Modern hajvágás és stílustanácsadás profi szakemberekkel.",
+         "person": {
+            "name": "Nagy Béla",
+            "photoUrl": "https://randomuser.me/api/portraits/men/11.jpg",
+            "password": "bela"
+         }
+      },
+      {
+         "id": "3",
+         "name": "Manikűr",
+         "description": "Kéz- és körömápolás, amely magába foglalja a klasszikus manikűrt és gél lakkozást is.",
+         "person": {
+            "name": "Szabó Katalin",
+            "photoUrl": "https://randomuser.me/api/portraits/women/11.jpg",
+            "password": "katalin"
+         }
+      },
+      {
+         "id": "4",
+         "name": "Pedikűr",
+         "description": "Teljes körű lábápolás és körömkezelés kényelmes környezetben.",
+         "person": {
+            "name": "Kiss József",
+            "photoUrl": "https://randomuser.me/api/portraits/men/51.jpg",
+            "password": "jozsef"
+         }
+      },
+      {
+         "id": "5",
+         "name": "Arcápolás",
+         "description": "Kényeztető arcápolás, amely segít megőrizni bőröd üdeségét és ragyogását.",
+         "person": {
+            "name": "Tóth Lívia",
+            "photoUrl": "https://randomuser.me/api/portraits/women/32.jpg",
+            "password": "livia"
+         }
+      },
+      {
+         "id": "6",
+         "name": "Szemöldökformázás",
+         "description": "Szemöldök szedés és festés személyre szabottan.",
+         "person": {
+            "name": "Horváth Zsófia",
+            "photoUrl": "https://randomuser.me/api/portraits/women/13.jpg",
+            "password": "zsofia"
+         }
+      },
+      {
+         "id": "7",
+         "name": "Személyi edzés",
+         "description": "Egyéni edzéstervek és motiváció személyi edzőtől a céljaid eléréséhez.",
+         "person": {
+            "name": "Kiss András",
+            "photoUrl": "https://randomuser.me/api/portraits/men/19.jpg",
+            "password": "andras"
+         }
+      },
+      {
+         "id": "8",
+         "name": "Jógaóra",
+         "description": "Nyugtató jógaórák különböző szinteken, a stressz és a feszültség enyhítésére.",
+         "person": {
+            "name": "Németh Emma",
+            "photoUrl": "https://randomuser.me/api/portraits/women/23.jpg",
+            "password": "emma"
+         }
+      },
+      {
+         "id": "9",
+         "name": "Testmasszázs",
+         "description": "Izomlazító testmasszázs a fáradt izmok regenerálásához.",
+         "person": {
+            "name": "Bene Péter",
+            "photoUrl": "https://randomuser.me/api/portraits/men/34.jpg",
+            "password": "peter"
+         }
+      },
+      {
+         "id": "10",
+         "name": "Gyógytorna",
+         "description": "Egyéni gyógytornakezelések mozgásszervi problémák enyhítésére.",
+         "person": {
+            "name": "Farkas Anikó",
+            "photoUrl": "https://randomuser.me/api/portraits/women/41.jpg",
+            "password": "aniko"
+         }
+      }
+   ],
+   "times": [
+      {
+         "id": "1",
+         "serviceid": "1",
+         "date": "2025-01-13",
+         "time": "10:00",
+         "clientid": "1"
+      },
+      {
+         "id": "2",
+         "serviceid": "1",
+         "date": "2025-01-13",
+         "time": "11:30"
+      },
+      {
+         "id": "3",
+         "serviceid": "1",
+         "date": "2025-01-13",
+         "time": "13:00"
+      },
+      {
+         "id": "4",
+         "serviceid": "1",
+         "date": "2025-01-13",
+         "time": "14:30"
+      },
+      {
+         "id": "5",
+         "serviceid": "1",
+         "date": "2025-01-13",
+         "time": "16:00"
+      },
+      {
+         "id": "6",
+         "serviceid": "2",
+         "date": "2025-01-13",
+         "time": "09:00"
+      },
+      {
+         "id": "7",
+         "serviceid": "2",
+         "date": "2025-01-13",
+         "time": "10:30"
+      },
+      {
+         "id": "8",
+         "serviceid": "2",
+         "date": "2025-01-13",
+         "time": "12:00"
+      },
+      {
+         "id": "9",
+         "serviceid": "2",
+         "date": "2025-01-13",
+         "time": "13:30"
+      },
+      {
+         "id": "10",
+         "serviceid": "2",
+         "date": "2025-01-13",
+         "time": "15:00"
+      },
+      {
+         "id": "11",
+         "serviceid": "3",
+         "date": "2025-01-13",
+         "time": "09:00"
+      },
+      {
+         "id": "12",
+         "serviceid": "3",
+         "date": "2025-01-13",
+         "time": "10:00"
+      },
+      {
+         "id": "13",
+         "serviceid": "3",
+         "date": "2025-01-13",
+         "time": "11:00"
+      },
+      {
+         "id": "14",
+         "serviceid": "3",
+         "date": "2025-01-13",
+         "time": "13:00"
+      },
+      {
+         "id": "15",
+         "serviceid": "3",
+         "date": "2025-01-13",
+         "time": "14:00"
+      },
+      {
+         "id": "16",
+         "serviceid": "3",
+         "date": "2025-01-13",
+         "time": "16:00"
+      },
+      {
+         "id": "17",
+         "serviceid": "4",
+         "date": "2025-01-13",
+         "time": "10:00"
+      },
+      {
+         "id": "18",
+         "serviceid": "4",
+         "date": "2025-01-13",
+         "time": "11:30"
+      },
+      {
+         "id": "19",
+         "serviceid": "4",
+         "date": "2025-01-13",
+         "time": "13:00"
+      },
+      {
+         "id": "20",
+         "serviceid": "4",
+         "date": "2025-01-13",
+         "time": "14:30"
+      },
+      {
+         "id": "21",
+         "serviceid": "4",
+         "date": "2025-01-13",
+         "time": "16:00"
+      },
+      {
+         "id": "22",
+         "serviceid": "5",
+         "date": "2025-01-13",
+         "time": "08:30"
+      },
+      {
+         "id": "23",
+         "serviceid": "5",
+         "date": "2025-01-13",
+         "time": "10:00"
+      },
+      {
+         "id": "24",
+         "serviceid": "5",
+         "date": "2025-01-13",
+         "time": "11:30"
+      },
+      {
+         "id": "25",
+         "serviceid": "5",
+         "date": "2025-01-13",
+         "time": "13:00"
+      },
+      {
+         "id": "26",
+         "serviceid": "5",
+         "date": "2025-01-13",
+         "time": "14:30"
+      },
+      {
+         "id": "27",
+         "serviceid": "6",
+         "date": "2025-01-13",
+         "time": "09:00"
+      },
+      {
+         "id": "28",
+         "serviceid": "6",
+         "date": "2025-01-13",
+         "time": "10:00"
+      },
+      {
+         "id": "29",
+         "serviceid": "6",
+         "date": "2025-01-13",
+         "time": "11:00"
+      },
+      {
+         "id": "30",
+         "serviceid": "6",
+         "date": "2025-01-13",
+         "time": "12:00"
+      },
+      {
+         "id": "31",
+         "serviceid": "6",
+         "date": "2025-01-13",
+         "time": "14:00"
+      },
+      {
+         "id": "32",
+         "serviceid": "7",
+         "date": "2025-01-13",
+         "time": "07:00"
+      },
+      {
+         "id": "33",
+         "serviceid": "7",
+         "date": "2025-01-13",
+         "time": "08:30",
+         "clientid": "1"
+      },
+      {
+         "id": "34",
+         "serviceid": "7",
+         "date": "2025-01-13",
+         "time": "10:00"
+      },
+      {
+         "id": "35",
+         "serviceid": "7",
+         "date": "2025-01-13",
+         "time": "12:00"
+      },
+      {
+         "id": "36",
+         "serviceid": "7",
+         "date": "2025-01-13",
+         "time": "14:00"
+      },
+      {
+         "id": "37",
+         "serviceid": "8",
+         "date": "2025-01-13",
+         "time": "06:00"
+      },
+      {
+         "id": "38",
+         "serviceid": "8",
+         "date": "2025-01-13",
+         "time": "07:30"
+      },
+      {
+         "id": "39",
+         "serviceid": "8",
+         "date": "2025-01-13",
+         "time": "09:00"
+      },
+      {
+         "id": "40",
+         "serviceid": "8",
+         "date": "2025-01-13",
+         "time": "11:00"
+      },
+      {
+         "id": "41",
+         "serviceid": "8",
+         "date": "2025-01-13",
+         "time": "17:00"
+      },
+      {
+         "id": "42",
+         "serviceid": "9",
+         "date": "2025-01-13",
+         "time": "09:30"
+      },
+      {
+         "id": "43",
+         "serviceid": "9",
+         "date": "2025-01-13",
+         "time": "11:00"
+      },
+      {
+         "id": "44",
+         "serviceid": "9",
+         "date": "2025-01-13",
+         "time": "12:30"
+      },
+      {
+         "id": "45",
+         "serviceid": "9",
+         "date": "2025-01-13",
+         "time": "14:00"
+      },
+      {
+         "id": "46",
+         "serviceid": "9",
+         "date": "2025-01-13",
+         "time": "15:30"
+      },
+      {
+         "id": "47",
+         "serviceid": "10",
+         "date": "2025-01-13",
+         "time": "08:00"
+      },
+      {
+         "id": "48",
+         "serviceid": "10",
+         "date": "2025-01-13",
+         "time": "09:30"
+      },
+      {
+         "id": "49",
+         "serviceid": "10",
+         "date": "2025-01-13",
+         "time": "11:00"
+      },
+      {
+         "id": "50",
+         "serviceid": "10",
+         "date": "2025-01-13",
+         "time": "13:00"
+      },
+      {
+         "id": "51",
+         "serviceid": "10",
+         "date": "2025-01-13",
+         "time": "15:00"
+      },
+      {
+         "id": "52",
+         "serviceid": "2",
+         "date": "2025-01-15",
+         "time": "09:00"
+      },
+      {
+         "id": "53",
+         "serviceid": "2",
+         "date": "2025-01-15",
+         "time": "10:30"
+      },
+      {
+         "id": "54",
+         "serviceid": "2",
+         "date": "2025-01-15",
+         "time": "12:00"
+      },
+      {
+         "id": "55",
+         "serviceid": "2",
+         "date": "2025-01-15",
+         "time": "13:30"
+      },
+      {
+         "id": "55",
+         "serviceid": "2",
+         "date": "2025-01-15",
+         "time": "15:00",
+		 "clientid": "1"
+      }
+
+   ]
+}
