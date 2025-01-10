@@ -3,17 +3,17 @@
             <div class="row g-0">
                 <!-- Fénykép -->
                 <div class="col-md-4">
-                    <img [src]="offer.person.photoUrl" [alt]="offer.person.name" class="img-fluid rounded-start">
+                    <img [src]="offer" [alt]="offer?.person?.name" class="img-fluid rounded-start">
                 </div>
                 <!-- Szöveg -->
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h2 class="card-title">{{offer.name}} Neve</h2>
-                        <h5 class="card-subtitle mb-3 text-muted">{{offer.person.name}}</h5>
+                        <h2 class="card-title">{{offer?.name}} Neve</h2>
+                        <h5 class="card-subtitle mb-3 text-muted">{{offer?.person?.name}}</h5>
                         <p class="card-text">
-                          {{offer.description}}
+                          {{offer?.description}}
                         </p>
-                      <a [routerLink]="'/services/' + offer.id" class="btn btn-primary">Részletek</a>
+                      <a [routerLink]="'/services/' + offer?.id" class="btn btn-primary">Részletek</a>
                     </div>
                 </div>
             </div>
