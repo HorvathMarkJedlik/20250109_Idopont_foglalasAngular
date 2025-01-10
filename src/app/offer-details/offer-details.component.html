@@ -3,7 +3,7 @@
             <div class="row g-0">
                 <!-- Fénykép -->
                 <div class="col-md-4">
-                    <img [src]="offer" [alt]="offer?.person?.name" class="img-fluid rounded-start">
+                    <img [src]="offer?.person?.photoUrl" [alt]="offer?.person?.name" class="img-fluid rounded-start">
                 </div>
                 <!-- Szöveg -->
                 <div class="col-md-8">
@@ -17,5 +17,24 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            @for (date of dates; track $index) {
+              <div class="col-sm-6 col-md-3 text-center">
+                <button class="btn btn-primary" (click)="selectDate(date)">{{date}}</button>
+              </div>
+            }
+        </div>
+        <div class="row my-3">
+            @for (time of times; track $index) {
+              <div class="col-sm-6 col-md-3 text-center " >
+                @if(time.clientid){
+                  <button class="btn btn-secondary">{{time.time}}</button>
+                }
+                @else {
+                  <button class="btn btn-success">{{time.time}}</button>
+                }
+              </div>
+            }
         </div>
     </div>

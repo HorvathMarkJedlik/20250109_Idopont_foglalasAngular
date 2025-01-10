@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { OffersService } from '../services/offers.service';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { OfferModel } from '../models/offer.model';
+import { TimeModel } from '../models/time.model';
 
 @Component({
   selector: 'app-offer-details',
@@ -14,34 +15,41 @@ export class OfferDetailsComponent {
   id: any = null;
   offer?: OfferModel;
   dates: string[] = [];
-
+  times: TimeModel[] = [];
 
   constructor(
     private offerService: OffersService,
     private route: ActivatedRoute
   ) {}
 
-  ngOnInit(){
-    this.route.paramMap.subscribe((params) =>{
+  ngOnInit() {
+    this.route.paramMap.subscribe((params) => {
       this.id = params.get('id');
       this.getOffer(this.id);
       this.getDates(this.id);
-    })
-  }
-
-  getOffer(id: any){
-    this.offerService.getOffer(Number(id)).subscribe({
-      next: (response) =>{
-        this.offer = response;
-      },
-      error: (err) => console.log(err)
     });
   }
 
-  getDates(id: any){
+  getOffer(id: any) {
+    this.offerService.getOffer(Number(id)).subscribe({
+      next: (response) => {
+        this.offer = response;
+      },
+      error: (err) => console.log(err),
+    });
+  }
+
+  getDates(id: any) {
     this.offerService.getDates(Number(id)).subscribe({
-      next: (response: string[]) => this.dates = response,
-      error: (err: string) => console.log(err)
+      next: (response: string[]) => (this.dates = response),
+      error: (err: string) => console.log(err),
+    });
+  }
+
+  selectDate(date: string) {
+    this.offerService.getTimes(Number(this.id), date).subscribe({
+      next: (response) => {this.times = response},
+      error: (err) => console.log(err)
     })
   }
 }
